@@ -1,0 +1,55 @@
+---
+import UBCimage from '../../public/logo.jpg'
+
+const materialList = [
+    { name: "UBC", source: '/public/logo.jpg' },
+    { name: "430 SS SO", source: '/public/logo.jpg' },
+    { name: "Rebaba Inoxidable", source: '/public/logo.jpg' },
+    // { name: "Rin" },
+    // { name: "316 SS SO" },
+    // { name: "201 SS SO" },
+];
+
+---
+
+<div>
+    <p>Trabajamos con <strong class="selected-material"></strong></p>
+    <div>
+        {materialList.map((item) =>
+            <div>
+                <img src={item.source} alt={item.name}>
+                <button value={item.name} class="selector">{item.name}</button>
+            </div>
+        )}
+    </div>
+</div>
+
+<script>
+    const materialList = [
+    { name: "UBC", source: "" },
+    { name: "430 SS SO" },
+    { name: "Rebaba Inoxidable" },
+    { name: "Rin" },
+    { name: "316 SS SO" },
+    { name: "201 SS SO" },
+    ];
+
+    let selectedMaterial = 0;
+
+    const handleClick  = (index: number) => {
+        selectedMaterial = index
+    }
+
+    const buttonSelectors = document.querySelectorAll('.selector') as any
+
+    const selectedText =  document.querySelectorAll('.selected-material')
+
+    console.log(typeof buttonSelectors)
+    
+    Array.from(buttonSelectors).forEach((element:any) => {
+        element.addEventListener('click', () => {
+            console.log(element.value)
+            selectedText[0].innerHTML = element.value
+        })
+    });
+</script>

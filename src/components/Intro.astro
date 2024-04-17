@@ -1,0 +1,24 @@
+---
+import ImageSelector from "./ImageSelector.astro";
+import { ButtonImageSelector } from "./react/ButtonImageSelector";
+
+
+---
+<section class="text-xl text-left px-20 max-w-[80ch] text-pretty mx-auto my-12">
+    <img 
+        class="w-48 mb-10 m-auto" 
+        src="/logo.jpg" 
+        alt="logo pareco"
+        style="border-radius: 10px;"
+    >
+
+    <h1 class="text-5xl font-semibold text-center text-wrap mx-auto mb-10 tracking-wide">
+        Su mejor aliado en reciclaje. 
+    </h1>
+
+    <!-- <p class="text-3xl font-light text-center text-wrap mx-auto mb-10 tracking-wide">
+        Trabajamos con <strong>"Inserte Material aleatorio".</strong>
+    </p> -->
+    <ButtonImageSelector client:visible/>
+    <!-- <ImageSelector /> -->
+</section>

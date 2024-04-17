@@ -1,0 +1,74 @@
+<header id="header-nav" class="fixed top-0 w-full px-6 py-4 z-50 bg-white bg-opacity-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-16 align-items-center">
+      <!-- <HeaderLink
+        checkActive={false}
+        href={translatePath('/')}
+        class="relative z-10"
+        aria-label={i18n.HEADER.LOGO}
+      > -->
+      <a href="/">
+        <img
+            class="w-20 m-auto rounded"
+            src="/logo.jpg"
+        />
+      </a>
+      <!-- </HeaderLink> -->
+      <nav
+        id="header-menu"
+        class="fixed w-full h-dvh inset-0 bg-[#151a36]/90 md:text-xl lg:text-xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:flex-row md:translate-y-[initial]"
+      >
+        <!-- <ul class="flex gap-4 ">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/">Servicios</a></li>
+            <li><a href="/">Contacto</a></li>
+        </ul> -->
+        <div class="flex items-center justify-center">
+            <div
+              class="inline-flex rounded-md shadow-light-3 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 focus:bg-neutral-200 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              role="group">
+              <button
+                type="button"
+                class="inline-block rounded-s bg-neutral-100 px-6 pb-2 pt-2.5 text-xl font-medium uppercase leading-normal text-neutral-600 transition duration-150 ease-in-out hover:bg-neutral-200 focus:bg-neutral-200 focus:outline-none focus:ring-0 active:bg-neutral-200 motion-reduce:transition-none"
+                data-twe-ripple-init
+                data-twe-ripple-color="light">
+                Inicio
+              </button>
+              <button
+                type="button"
+                class="inline-block bg-neutral-100 px-6 pb-2 pt-2.5 text-xl font-medium uppercase leading-normal text-neutral-600 transition duration-150 ease-in-out hover:bg-neutral-200 focus:bg-neutral-200 focus:outline-none focus:ring-0 active:bg-neutral-200 motion-reduce:transition-none"
+                data-twe-ripple-init
+                data-twe-ripple-color="light">
+                Servicios
+              </button>
+              <button
+                type="button"
+                class="inline-block rounded-e bg-neutral-100 px-6 pb-2 pt-2.5 text-xl font-medium uppercase leading-normal text-neutral-600 transition duration-150 ease-in-out hover:bg-neutral-200 focus:bg-neutral-200 focus:outline-none focus:ring-0 active:bg-neutral-200 motion-reduce:transition-none"
+                data-twe-ripple-init
+                data-twe-ripple-color="light">
+                Contacto
+              </button>
+            </div>
+          </div>
+        <!-- <HeaderLink class="text__glowing" href={translatePath('/vota/')}>
+          {t('nav.vota')}
+        </HeaderLink>
+        <HeaderLink class="text__glowing" href={translatePath('/info/')}>
+          {t('nav.info')}
+        </HeaderLink>
+        <HeaderLink class="text__glowing" href={translatePath('/archivo/')}>
+          {t('nav.archivo')}
+        </HeaderLink> -->
+        <!-- <LanguageSelector />
+        <Button
+          className="md:py-2 md:ml-auto md:text-base lg:text-base"
+          url="https://drive.google.com/file/d/1D7IvIqMyqAoG58fuk8bc0JvhAmrWBbOK/view"
+        >
+          {i18n.HEADER_BUTTON}
+        </Button> -->
+        <!-- <a href="#header-nav" class="md:hidden absolute top-6 right-6">
+          <CloseIcon />
+        </a> -->
+      </nav>
+      <!-- <a href="#header-menu" class="md:hidden"><MenuIcon /></a> -->
+    </div>
+  </header>
