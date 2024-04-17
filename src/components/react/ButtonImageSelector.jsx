@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
 const materialList = [
-  { name: "UBC", source: "/public/ubc.jpg" },
-  { name: "430 SS SO", source: "/public/430.jpg" },
-  { name: "Rebaba Inoxidable", source: "/public/rebaba.jpg" },
-  { name: "Rin", source: "/public/rin.jpg" },
-  { name: "316 SS SO", source: "/public/316.jpg" },
-  { name: "201 SS SO", source: "/public/201.jpg" },
+  { name: "UBC", source: "/ubc.jpg" },
+  { name: "430 SS SO", source: "/430.jpg" },
+  { name: "Rebaba Inoxidable", source: "/rebaba.jpg" },
+  { name: "Rin", source: "/rin.jpg" },
+  { name: "316 SS SO", source: "/316.jpg" },
+  { name: "201 SS SO", source: "/201.jpg" },
 ];
 
 export function Counter() {
