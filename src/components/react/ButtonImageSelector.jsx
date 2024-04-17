@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
 const materialList = [
-  { name: "UBC", source: "/public/UBC.jpg" },
-  { name: "430 SS SO", source: "/public/430-SS-SO.jpg" },
-  { name: "Rebaba Inoxidable", source: "/public/REBABA.jpg" },
-  { name: "Rin", source: "/public/RIN.jpg" },
-  { name: "316 SS SO", source: "/public/316-SS-SO.jpg" },
-  { name: "201 SS SO", source: "/public/201-SS-SO.jpg" },
+  { name: "UBC", source: "/public/ubc.jpg" },
+  { name: "430 SS SO", source: "/public/430.jpg" },
+  { name: "Rebaba Inoxidable", source: "/public/rebaba.jpg" },
+  { name: "Rin", source: "/public/rin.jpg" },
+  { name: "316 SS SO", source: "/public/316.jpg" },
+  { name: "201 SS SO", source: "/public/201.jpg" },
 ];
 
 export function Counter() {
@@ -27,10 +27,6 @@ export function Counter() {
 
 export function ButtonImageSelector() {
   const [selectedMaterial, setSelectedMaterial] = useState(0);
-
-  const handleSelectMaterial = (index) => {
-    setSelectedMaterial(index);
-  };
 
   useEffect(() => {
     const interval = setInterval(() => {
